@@ -14,3 +14,7 @@ Port of the C++ project `appEarth` to React + Three.js.
 
 ## Build
 `npm run build` (output in `docs` folder)
+
+## Screenshots
+
+![](screenshots/2025-11-29_14-00.png)
