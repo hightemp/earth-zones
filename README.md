@@ -2,6 +2,8 @@
 
 Port of the C++ project `appEarth` to React + Three.js.
 
+Demo: https://hightemp.github.io/earth-zones/
+
 ## Features
 - 3D Earth model with custom shader (colored zones by axis).
 - Political map overlay.
