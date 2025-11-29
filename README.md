@@ -1,4 +1,4 @@
-# Earth Zones React
+# Earth Zones
 
 Port of the C++ project `appEarth` to React + Three.js.
 
