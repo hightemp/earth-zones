@@ -59,7 +59,7 @@ export const Cities: React.FC<CitiesProps> = ({ showCities, showCity, filter, se
   // Let's try standard conversion first.
   const getPosition = (lat: number, lon: number, radius: number) => {
     const phi = (90 - lat) * (Math.PI / 180);
-    const theta = (lon + 180) * (Math.PI / 180); // +180 might be needed depending on texture start
+    const theta = (lon + 300) * (Math.PI / 180); // +180 might be needed depending on texture start
     
     // Standard spherical to cartesian (Y up)
     const x = -(radius * Math.sin(phi) * Math.cos(theta));
@@ -87,7 +87,7 @@ export const Cities: React.FC<CitiesProps> = ({ showCities, showCity, filter, se
   }, [filteredCities]);
 
   return (
-    <group rotation={[0, -Math.PI / 2, 0]}> 
+    <group rotation={[0, Math.PI / 2, 0]}>
       {/* Rotation adjustment to match texture if needed. Usually textures start at -180 or 0. */}
       
       {showCities && (
