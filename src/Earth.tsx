@@ -37,11 +37,11 @@ vec3 getColorByPosition(vec3 pos) {
         if (pos.y > 0.0) color = vec3(1.0, 1.0, 1.0); // +Y White (Top)
         else color = vec3(0.0, 0.0, 0.0);             // -Y Black (Bottom)
     } else if (maxComp == absPos.x) {
-        if (pos.x > 0.0) color = vec3(0.0, 1.0, 0.0); // +X Green
-        else color = vec3(0.0, 0.0, 1.0);             // -X Blue
+        if (pos.x > 0.0) color = vec3(1.0, 1.0, 0.0); // +X Yellow
+        else color = vec3(1.0, 0.0, 0.0) ;            // -X Red
     } else {
-        if (pos.z > 0.0) color = vec3(1.0, 0.0, 0.0); // +Z Red
-        else color = vec3(1.0, 1.0, 0.0);             // -Z Yellow
+        if (pos.z > 0.0) color = vec3(0.0, 0.0, 1.0); // +Z Blue
+        else color = vec3(0.0, 1.0, 0.0);             // -Z Green
     }
 
     if (showCenters) {
